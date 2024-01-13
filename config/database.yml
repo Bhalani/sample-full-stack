@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  pool: 5
+  encoding: utf8
+  host: localhost
+
+development:
+  <<: *default
+  database: <%= ENV.fetch("POSTGRES_DB") { "calorie_app_development" } %>
+
+test:
+  <<: *default
+  database: <%= ENV.fetch("POSTGRES_DB") { "calorie_app_test" } %>
+
+production:
+  <<: *default
+  database: <%= ENV.fetch("POSTGRES_DB") { "calorie_app_production" } %>

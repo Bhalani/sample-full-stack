@@ -1,0 +1,65 @@
+fr:
+  time:
+    formats:
+      default: "%B %d %Y %H:%M"
+  bands:
+    rolling_stones: "The Rolling Stones"
+    beatles: "The Beatles"
+    acdc: "AC/DC"
+  vue:
+    front:
+      title: "Front end"
+      nav:
+        homepage: "Accueil"
+        pages: "Pages"
+      home:
+        title: "Musiciens"
+        breadcrumb: "Tous les musiciens"        
+      pages:
+        title: "Pages"
+        server_404: "Ce lien provoque une 404 venant du routage serveur"
+        client_404: "Ce lien provoque un 404 venant du routage côté client"
+        server_401: "Ce lien appelle l'API qui lui répond une 401"
+        server_500: "Ce lien appelle l'API qui lui répond une 500"
+        admin_link: "» Envie de voir l'admin ?"
+      musicians:
+        title: "Details concernant ce musicien"
+        id: "Id"
+        name: "Nom"
+        band: "Groupe"        
+      errors:
+        title: "Pages d'erreurs"
+    admin:
+      title: "Admin"
+      save: "Enregistrer"
+      cancel: "Annuler"
+      filter: "Filtrer"
+      reset_filters: "Reseter les filtres"
+      delete: "Supprimer"
+      no_result: "Aucun resultat :-/"
+      any: "Tous"
+      nav:
+        dashboard: "Dashboard"
+        musicians: "Musiciens"
+        websockets: "Websockets"      
+        logout: "Déconnection"
+      dashboard:
+        title: "Dashboard"
+        musicians: "Aucun musician | Un musicien | musiciens" 
+      musicians:
+        create: "+ Ajouter un musicien"
+        new: "Nouveau musicien"
+        form:
+          id: "Id"
+          name: "Nom"
+          band: "Groupe"
+      confirm: "Etes-vous sur ?"
+  activerecord:
+    errors:
+      models:
+        musician:
+          attributes:
+            name:
+              blank: "Saisie requise"
+            band:
+              blank: "Merci de sélectionner un groupe"

@@ -1,0 +1,21 @@
+{
+  "entrypoints/admin.js": {
+    "file": "assets/admin.050f7e42.js",
+    "src": "entrypoints/admin.js",
+    "isEntry": true,
+    "imports": [
+      "_index.63b17699.js"
+    ]
+  },
+  "entrypoints/front.js": {
+    "file": "assets/front.ed116008.js",
+    "src": "entrypoints/front.js",
+    "isEntry": true,
+    "imports": [
+      "_index.63b17699.js"
+    ]
+  },
+  "_index.63b17699.js": {
+    "file": "assets/index.63b17699.js"
+  }
+}

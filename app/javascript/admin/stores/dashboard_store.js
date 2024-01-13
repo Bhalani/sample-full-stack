@@ -1,0 +1,18 @@
+import { defineStore } from 'pinia'
+
+export const DashboardStore = defineStore('dashboard', {
+  state: () => {
+    return {
+      metrics: {}
+    }
+  },
+
+  actions: {
+    async index() {
+      this.axios.get('/dashboard').then(response => {
+        console.log(response.data.metrics)
+        this.metrics = response.data.metrics;
+      })
+    }
+  }
+})
